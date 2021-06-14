@@ -1,14 +1,24 @@
 import React from 'react'
 import { View, Text } from 'react-native'
 import { createStackNavigator } from '@react-navigation/stack';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native'; 
 import GirisyapScreen from '../screens/GirisYap/index';
 import KayıtOlScreen from '../screens/KayıtOl/index';
+import AnasayfaScreen from '../screens/Anasayfa/index';
+import { Anasayfa, GirisSayfa } from '../types';
+
+const Tab=createBottomTabNavigator();
+
+
+
+
 
 const Stack = createStackNavigator();
+
 const GirisyapNavigator = () => {
     return (
-        <NavigationContainer>
+        
             <Stack.Navigator>
                 <Stack.Screen  
                 name='GirisYapScreen' 
@@ -21,8 +31,10 @@ const GirisyapNavigator = () => {
                  options={{headerShown:false}} 
                  />
             </Stack.Navigator>
+       
+           
             
-        </NavigationContainer>
+        
     )
 }
 

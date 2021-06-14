@@ -14,7 +14,8 @@ import TabOneScreen from '../screens/TabOneScreen';
 import KayıtOlScreen from '../screens/KayıtOl/index';
 import GirisYapScreen from '../screens/GirisYap/index';
 import TabTwoScreen from '../screens/TabTwoScreen';
-import { BottomTabParamList, OnSayfa, TabOneParamList, TabTwoParamList } from '../types';
+import AnasayfaScreen from '../screens/Anasayfa/index' 
+import { BottomTabParamList, GirisSayfa, TabOneParamList, TabTwoParamList } from '../types';
 
 const BottomTab = createBottomTabNavigator<BottomTabParamList>();
 
@@ -52,7 +53,7 @@ function TabBarIcon(props: { name: React.ComponentProps<typeof Ionicons>['name']
 // Each tab has its own navigation stack, you can read more about this pattern here:
 // https://reactnavigation.org/docs/tab-based-navigation#a-stack-navigator-for-each-tab
 
-const OnSafyaStack = createStackNavigator<OnSayfa>();
+const OnSafyaStack = createStackNavigator<GirisSayfa>();
 function KayıtOlNavigator() {
   return (
     <OnSafyaStack.Navigator>

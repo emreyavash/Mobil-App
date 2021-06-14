@@ -6,6 +6,8 @@
 export type RootStackParamList = {
   Root: undefined;
   NotFound: undefined;
+  GirisYapScreen:undefined;
+  AnasayfaScreen : undefined;
 };
 
 export type BottomTabParamList = {
@@ -21,7 +23,12 @@ export type TabTwoParamList = {
   TabTwoScreen: undefined;
 };
 
-export type OnSayfa={
+export type GirisSayfa={
   GirisYapScreen:undefined;
   KayıtOlScreen:undefined;
+  AnasayfaScreen : undefined;
+}
+export type Anasayfa={
+  AnasayfaScreen : undefined;
+  index2:undefined;
 }

@@ -9,7 +9,7 @@ const styles =StyleSheet.create({
     },
     background: {
         position: 'absolute',
-        marginTop:20,
+        marginTop:21,
         left: 0,
         right: 0,
         top: 0,
@@ -33,7 +33,7 @@ const styles =StyleSheet.create({
     inputContainer:{
         justifyContent:'center',
         alignItems:'center',
-        marginTop:120
+        marginTop:50
     },
     input:{
         width:250,
@@ -41,7 +41,7 @@ const styles =StyleSheet.create({
         borderBottomWidth:1,
         borderBottomColor:'#fff',
         fontFamily:'Poppins',
-        
+        color:'#fff',
         marginBottom:10,
         fontSize:16,
         paddingLeft:10,
@@ -66,7 +66,11 @@ const styles =StyleSheet.create({
         borderWidth:0,
         borderRadius:25,
         backgroundColor:'#fff',
-        
+        elevation:8,
+        shadowColor:'#000',
+        shadowOffset:{width:0,height:1},
+        shadowOpacity:0.8,
+        shadowRadius:2,
     },
     btnText:{
         fontSize:17,
@@ -79,6 +83,23 @@ const styles =StyleSheet.create({
         marginTop:50,
         
         
+    },
+    otherLogin:{
+        justifyContent:'center',
+        alignSelf:'center',
+        borderBottomWidth:1,
+        borderBottomColor:'#fff',
+        width:250,
+        marginTop:80,
+        flexDirection:'row',   
+    },
+    login:{
+        
+        resizeMode:'contain',
+        width:44,
+        height:44,
+        marginLeft:20,
+        marginBottom:10
     }
 });
 

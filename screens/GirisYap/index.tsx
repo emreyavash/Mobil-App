@@ -16,7 +16,11 @@ const index = () => {
                 <Image style={styles.image} source={require('../../assets/images/logobeyaz.png')} />
                 
             </View>
-            
+            <View style={styles.otherLogin}>
+                <TouchableOpacity><Image style={styles.login} source={require('../../assets/images/facebook.png')}/></TouchableOpacity>
+                <TouchableOpacity><Image style={styles.login} source={require('../../assets/images/google.png')}/></TouchableOpacity>
+               
+            </View>
             <View style={styles.inputContainer}>
             <TextInput 
             style={styles.input} 
@@ -33,7 +37,7 @@ const index = () => {
             </View>
             <View style={styles.btnContainer}>
                 <TouchableOpacity style={styles.btn}
-                onPress={()=>(console.log('bastın'))}
+                onPress={()=>navigation.navigate('AnasayfaScreen')}
                 >
                     <Text style={styles.btnText}>
                         Giriş Yap

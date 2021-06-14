@@ -10,14 +10,14 @@ import { ColorSchemeName } from 'react-native';
 
 import NotFoundScreen from '../screens/NotFoundScreen';
 import { RootStackParamList } from '../types';
+import AnasayfaTabNavigator from './AnasayfaTabNavigator';
 import BottomTabNavigator from './BottomTabNavigator';
+import GirisyapNavigator from './GirisyapNavigator';
 import LinkingConfiguration from './LinkingConfiguration';
 
-export default function Navigation({ colorScheme }: { colorScheme: ColorSchemeName }) {
+export default function Navigation() {
   return (
-    <NavigationContainer
-      linking={LinkingConfiguration}
-      theme={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
+    <NavigationContainer>
       <RootNavigator />
     </NavigationContainer>
   );
@@ -30,8 +30,10 @@ const Stack = createStackNavigator<RootStackParamList>();
 function RootNavigator() {
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }}>
-      <Stack.Screen name="Root" component={BottomTabNavigator} />
-      <Stack.Screen name="NotFound" component={NotFoundScreen} options={{ title: 'Oops!' }} />
+      <Stack.Screen name="GirisYapScreen" component={GirisyapNavigator} />
+      <Stack.Screen name="AnasayfaScreen" component={AnasayfaTabNavigator} />
+
+      
     </Stack.Navigator>
   );
 }
