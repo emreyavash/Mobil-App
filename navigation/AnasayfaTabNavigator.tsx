@@ -5,6 +5,23 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 import AnasayfaScreen from '../screens/Anasayfa/index';
 import { Anasayfa } from '../types';
+import Hizmetler from '../screens/Hizmetler/index'
+
+
+
+const Tab=createBottomTabNavigator<Anasayfa>();
+
+const BottomNavigator=()=>{
+    return(
+        <Tab.Navigator>
+            <Tab.Screen 
+            name="Home"
+            component={AnasayfaTabNavigator}
+            />
+        </Tab.Navigator>
+    );
+}
+
 const Stack=createStackNavigator();
 const AnasayfaTabNavigator = () => {
     return (
@@ -15,11 +32,16 @@ const AnasayfaTabNavigator = () => {
                 component={AnasayfaScreen}
                 options={{headerShown:false}} 
                 />
-               
+               <Stack.Screen 
+               name='Hizmetler'
+               component={Hizmetler}
+               options={{headerShown:false}}
+               />
             </Stack.Navigator>
         
         
     )
 }
 
-export default AnasayfaTabNavigator
+
+export default BottomNavigator

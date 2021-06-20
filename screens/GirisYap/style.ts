@@ -3,13 +3,11 @@ import {StyleSheet} from 'react-native';
 const styles =StyleSheet.create({
    
     container:{ 
-        paddingTop:20,
         flex:1,
         fontFamily:'Poppins'
     },
     background: {
         position: 'absolute',
-        marginTop:21,
         left: 0,
         right: 0,
         top: 0,

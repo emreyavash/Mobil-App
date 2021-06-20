@@ -30,5 +30,6 @@ export type GirisSayfa={
 }
 export type Anasayfa={
   AnasayfaScreen : undefined;
-  index2:undefined;
+  Home:undefined;
+  Hizmetler:undefined;
 }

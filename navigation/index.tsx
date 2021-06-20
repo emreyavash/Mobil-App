@@ -33,6 +33,7 @@ function RootNavigator() {
       <Stack.Screen name="GirisYapScreen" component={GirisyapNavigator} />
       <Stack.Screen name="AnasayfaScreen" component={AnasayfaTabNavigator} />
 
+
       
     </Stack.Navigator>
   );
