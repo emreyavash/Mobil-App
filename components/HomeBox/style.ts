@@ -22,10 +22,8 @@ boxbtn:{
     backgroundColor:'#f1f1f1',
     elevation:8,
     shadowColor:'#000',
-    shadowOffset:{width:0,height:3},
-    shadowOpacity:0.3,
-    shadowRadius:5,
-    overflow:'hidden',
+    shadowOffset:{width:0,height:1},
+    shadowOpacity:0.5,
     marginTop:10
 
 }

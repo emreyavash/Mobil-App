@@ -1,6 +1,4 @@
-
-import { StyleSheet } from 'react-native'
-
+import {StyleSheet} from 'react-native'
 const styles = StyleSheet.create({
     Container:{
         marginTop:22,
@@ -26,32 +24,33 @@ const styles = StyleSheet.create({
        bildirimIcon:{
            marginLeft:60
        },
-       categoryBoxs:{
+       searchContainer:{
+        borderWidth:1,
+        width:250,
+        flexDirection:'row',
         justifyContent:'center',
+        alignSelf:'center',
         alignItems:'center',
-        marginTop:10
+        borderRadius:25,
+        padding:0,
+        margin:0,
        },
-       categoryBtn:{
-        elevation:7,
-        width:150,
-        height:100,
-        borderRadius:10,
-        marginLeft:20,
-        marginBottom:20,
-        shadowColor:'#000',
-        shadowOpacity:0.5,
-        shadowOffset:{width:0,height:1}
+       search:{
+        width:180,
+        height:40,
+        fontFamily:'Poppins',
+        fontSize:14,
+        opacity:0.6
        },
-       category:{
-        width:150,
-        height:100,
-        resizeMode:'cover',
-        borderRadius:10
-
+       searchIcon:{
+        zIndex:1,
+        opacity:0.7,
+        paddingLeft:15,
+       
        },
-       categoryRow:{
-           flexDirection:'row',
-     
+       mesajContainer:{
+           marginTop:20
        }
+    
 })
 export default styles;

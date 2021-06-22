@@ -8,7 +8,9 @@ const styles = StyleSheet.create({
         height:330,
         borderRadius:20,
         elevation:5,
-
+        shadowColor:'#000',
+        shadowOpacity:0.5,
+        shadowOffset:{width:0,height:1}
 
     },
     

@@ -12,8 +12,8 @@ import hizmetbox from '../../assets/data/lasthizmetbox';
 const index = () => {
     const navigation=useNavigation();
     return (
-        <ScrollView showsVerticalScrollIndicator={false}>
-        <SafeAreaProvider  style={styles.container}>
+        <ScrollView showsVerticalScrollIndicator={false} style={styles.container}>
+        <SafeAreaProvider  >
             <View style={styles.header}>
             <Image style={styles.image} source={require('../../assets/images/siyahlogo.png')}/>
             <TouchableOpacity><Ionicons style={styles.bildirimIcon} name="notifications-outline" size={30} color="black" /></TouchableOpacity>
