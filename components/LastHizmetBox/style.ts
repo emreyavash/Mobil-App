@@ -34,9 +34,7 @@ const styles = StyleSheet.create({
         padding:15,
         paddingBottom:28,
         color:'#5a5a5a',
-        overflow:'hidden',
-        flexShrink:1,
-        flexWrap:'wrap',
+    
 
     },
     name:{

@@ -22,10 +22,10 @@ const HizmetBox = (props:HizmetBoxProps) => {
             
             <TouchableOpacity style={styles.hizmetContainer} >
                 <Image style={styles.photo} source={{uri:hizmet.photo}} />
-                <Text style={styles.title}>{hizmet.title}</Text>
+                <Text numberOfLines={2} style={styles.title}>{hizmet.title}</Text>
                 <View style={styles.under}>
                 <Image style={styles.userPhoto} source={{uri:hizmet.userPhoto}} />
-                <Text style={styles.name}>{hizmet.name}</Text>
+                <Text numberOfLines={1} style={styles.name}>{hizmet.name}</Text>
                 </View>
                 <Text style={styles.category}>{hizmet.category}</Text>
             </TouchableOpacity>
