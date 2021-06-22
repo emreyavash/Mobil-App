@@ -3,7 +3,8 @@ const styles = StyleSheet.create({
     container:{ 
         paddingTop:20,
         flex:1,
-        fontFamily:'Poppins'
+        fontFamily:'Poppins',
+        marginTop:22
     },
     background: {
         position: 'absolute',

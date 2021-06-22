@@ -29,6 +29,6 @@ export default{
         price:'500 ₺',
         photo:'https://images.pexels.com/photos/3636100/pexels-photo-3636100.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
         userPhoto:'https://randomuser.me/api/portraits/men/64.jpg'
-    },
+    }
 ]
 }

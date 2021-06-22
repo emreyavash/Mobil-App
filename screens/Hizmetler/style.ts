@@ -4,6 +4,7 @@ const styles = StyleSheet.create({
     Container:{
         flex:1,
         backgroundColor:'#fff',
+        marginTop:22
         
     },
     headerContainer:{
@@ -43,9 +44,11 @@ const styles = StyleSheet.create({
         color:'#5a5a5a'
     },
     hizmetContainer:{
+        height:'83%',
         justifyContent:'center',
         alignItems:'center',
-        marginTop:20
+        marginTop:20,
+        marginBottom:20
     },
 })
 export default styles;

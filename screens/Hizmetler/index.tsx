@@ -21,12 +21,14 @@ const index = () => {
                </View>
             </View>
             <View style={styles.infoContainer}>
-                <Text style={styles.infoText}>Birbirinden eşsiz hizmetleri burada bulabilirsin.</Text>
+                <Text style={styles.infoText}>Birbirinden eşsiz hizmetleri burada bulabilirsina.</Text>
             </View>
             <View style={styles.hizmetContainer}>
                 <FlatList 
-                data={hizmetboxs.items}
-               renderItem={({item})=><HizmetBoxs info={item} />}
+                  data={hizmetboxs.items}
+                  renderItem={({item})=><HizmetBoxs info={item} />}
+                  showsVerticalScrollIndicator={false}
+
                 />
 
             </View>

@@ -1,8 +1,9 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { View, Text,TouchableOpacity } from 'react-native'
 import styles from './style'
 import {useNavigation} from '@react-navigation/native'
 import { Ionicons,AntDesign,Entypo,FontAwesome  } from '@expo/vector-icons';
+
 
 interface HizmetBoxsProps{
     info:{
@@ -19,11 +20,17 @@ interface HizmetBoxsProps{
 
 const HizmetBoxs = (props:HizmetBoxsProps) => {
     const {info}=props;
+    const [change,setchange]=useState(false);
+    const changeIcon=()=>{
+        change===false? setchange(true) : setchange(false)
+    }
     const navigation =useNavigation();
     return (
         <>
             <TouchableOpacity style={styles.Container}>
-                <Text>{info.title}</Text>
+                <TouchableOpacity onPress={changeIcon}><AntDesign style={styles.heartIcon} name={change ? 'heart' : 'hearto'} size={18} color="#c52833" /></TouchableOpacity>
+                <Text style={styles.title}>{info.title}</Text>
+                <Text style={styles.category}>{info.category}</Text>
             </TouchableOpacity>
         </>
     )

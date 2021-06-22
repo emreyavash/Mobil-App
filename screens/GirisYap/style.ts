@@ -4,7 +4,8 @@ const styles =StyleSheet.create({
    
     container:{ 
         flex:1,
-        fontFamily:'Poppins'
+        fontFamily:'Poppins',
+        marginTop:22
     },
     background: {
         position: 'absolute',
