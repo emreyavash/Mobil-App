@@ -38,6 +38,9 @@ const styles = StyleSheet.create({
        alignItems:'center',
        marginTop:20
     },
+    inputContainer:{
+        marginBottom:20
+    },
     input:{
         width:225,
         borderBottomWidth:1,
@@ -46,7 +49,7 @@ const styles = StyleSheet.create({
         fontSize:16,
         fontFamily:'Poppins',
         paddingLeft:10,
-        marginBottom:33
+       marginBottom:2
     },
     sozlesmeContainer:{
         width:'100%',
@@ -62,7 +65,8 @@ const styles = StyleSheet.create({
         width:'100%',
         justifyContent:'center',
         alignItems:'center',
-        marginTop:50
+        marginTop:50,
+        marginBottom:50
     },
     btn:{
         width:178,
@@ -83,5 +87,39 @@ const styles = StyleSheet.create({
         color:'#5A5A5A',
         fontFamily:'Poppins',
     },
+    formik:{
+       width:'100%',
+    
+    },
+    alert:{  
+        color:'#fdfdfd',
+        fontFamily:'Poppins',
+        fontSize:12,
+        alignSelf:'flex-end',
+    },
+    passContainer:{
+        flexDirection:'row',
+        justifyContent:'space-between',
+        alignItems:'center',
+        width:225,
+        borderBottomWidth:1,
+        borderBottomColor:'#fff',
+        color:'#fff',
+        fontSize:16,
+        fontFamily:'Poppins',
+        paddingLeft:10,
+        marginBottom:2
+    },
+    passInput:{
+        width:150,
+        color:'#fff',
+        fontFamily:'Poppins',
+
+
+    },
+    eye:{
+        alignItems:'flex-end'
+
+    }
 })
 export default styles;

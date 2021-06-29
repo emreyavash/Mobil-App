@@ -7,12 +7,7 @@ import GirisyapScreen from '../screens/GirisYap/index';
 import KayıtOlScreen from '../screens/KayıtOl/index';
 import AnasayfaScreen from '../screens/Anasayfa/index';
 import { Anasayfa, GirisSayfa } from '../types';
-
-const Tab=createBottomTabNavigator();
-
-
-
-
+import AnasayfaTabNavigator from '../navigation/AnasayfaTabNavigator'
 
 const Stack = createStackNavigator();
 
@@ -29,6 +24,11 @@ const GirisyapNavigator = () => {
                  name='KayıtOlScreen' 
                  component={KayıtOlScreen}
                  options={{headerShown:false}} 
+                 />
+                 <Stack.Screen 
+                  name='AnasayfaScreen' 
+                  component={AnasayfaTabNavigator}
+                  options={{headerShown:false}} 
                  />
             </Stack.Navigator>
        

@@ -13,25 +13,17 @@ export type RootStackParamList = {
 export type BottomTabParamList = {
   Anasayfa: undefined;
   Kategoriler: undefined;
-  Mesajlar:undefined
-};
-
-export type TabOneParamList = {
-  TabOneScreen: undefined;
-};
-
-export type TabTwoParamList = {
-  TabTwoScreen: undefined;
+  Mesajlar:undefined;
+  Profilim:undefined
 };
 
 export type GirisSayfa={
   GirisYapScreen:undefined;
   KayıtOlScreen:undefined;
-  AnasayfaScreen : undefined;
+
 }
 export type Anasayfa={
-  AnasayfaScreen : undefined;
-  Anasayfa:undefined;
+  AnasayfaScreen:undefined;
   Hizmetler:undefined;
 }
 export type KategorilerParamList={
@@ -39,4 +31,7 @@ export type KategorilerParamList={
 }
 export type MesajlarParamList={
   Mesajlar:undefined;
+}
+export type ProfilimParamList={
+  Profilim:undefined;
 }

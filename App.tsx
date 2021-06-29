@@ -11,8 +11,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 export default function App() {
 
   const isLoadingComplete = useCachedResources();
-  const colorScheme = useColorScheme();
-  const Stack =createStackNavigator();
+
   if (!isLoadingComplete) {
     return null;
   } else {

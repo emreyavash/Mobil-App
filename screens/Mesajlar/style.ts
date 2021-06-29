@@ -49,7 +49,8 @@ const styles = StyleSheet.create({
        
        },
        mesajContainer:{
-           marginTop:20
+           marginTop:20,
+       
        }
     
 })

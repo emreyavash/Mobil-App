@@ -4,11 +4,12 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 import AnasayfaScreen from '../screens/Anasayfa/index';
-import { Anasayfa,KategorilerParamList,BottomTabParamList,MesajlarParamList } from '../types';
+import { Anasayfa,KategorilerParamList,BottomTabParamList,MesajlarParamList,ProfilimParamList } from '../types';
 import { Ionicons,AntDesign,Entypo,FontAwesome,SimpleLineIcons,Feather   } from '@expo/vector-icons';
 import Hizmetler from '../screens/Hizmetler/index'
 import KategorilerScreen from '../screens/Kategoriler/index';
-import Mesajlar from '../screens/Mesajlar'
+import Mesajlar from '../screens/Mesajlar/index'
+import Profilim from '../screens/Profilim/index';
 
 
 
@@ -44,6 +45,14 @@ const BottomNavigator=()=>{
                 options={{    
                     tabBarIcon: ({ color, size }) => (
                     <Feather  name="message-circle" color={color} size={size} />), 
+            }}
+            />
+            <Tab.Screen 
+                name="Profilim"
+                component={ProfilimTabNavigator}
+                options={{    
+                    tabBarIcon: ({ color, size }) => (
+                    <FontAwesome  name="user-o" color={color} size={size} />), 
             }}
             />
         </Tab.Navigator>
@@ -102,6 +111,19 @@ const MesajlarTabNavigator=()=>{
             options={{headerShown:false}}
             />
         </StackMesaj.Navigator>
+    )
+}
+const StackProfil=createStackNavigator<ProfilimParamList>();
+
+const ProfilimTabNavigator=()=>{
+    return(
+        <StackProfil.Navigator>
+            <StackProfil.Screen 
+            name='Profilim'
+            component={Profilim}
+            options={{headerShown:false}}
+            />
+        </StackProfil.Navigator>
     )
 }
 

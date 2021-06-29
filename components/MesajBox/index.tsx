@@ -5,6 +5,7 @@ import {useNavigation} from '@react-navigation/native'
 import styles from './style';
 interface mesajlarProps{
     mesaj:{
+        id:string,
         name:string,
         userPhoto:string,
         mesajIcerik:string

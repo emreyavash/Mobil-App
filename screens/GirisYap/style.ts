@@ -41,7 +41,7 @@ const styles =StyleSheet.create({
         borderBottomColor:'#fff',
         fontFamily:'Poppins',
         color:'#fff',
-        marginBottom:10,
+        marginBottom:5,
         fontSize:16,
         paddingLeft:10,
         
@@ -99,6 +99,41 @@ const styles =StyleSheet.create({
         height:44,
         marginLeft:20,
         marginBottom:10
+    },
+    alert:{  
+        color:'#fdfdfd',
+        fontFamily:'Poppins',
+        fontSize:12,
+        alignSelf:'flex-end',
+    },
+    formik:{
+        width:'100%',
+    },
+    errorCon:{
+        marginBottom:10,
+    }, 
+    passContainer:{
+        flexDirection:'row',
+        justifyContent:'space-between',
+        alignItems:'center',
+        width:250,
+        borderBottomWidth:1,
+        borderBottomColor:'#fff',
+        color:'#fff',
+        
+        fontFamily:'Poppins',
+        paddingLeft:10,
+        marginBottom:5
+    },
+    passInput:{
+        width:150,
+        color:'#fff',
+        fontFamily:'Poppins',
+        fontSize:16,
+    },
+    eye:{
+        alignItems:'flex-end'
+
     }
 });
 

@@ -20,13 +20,14 @@ const Mesajlar = () => {
                  />
                 <TouchableOpacity><Ionicons style={styles.searchIcon} name="search" size={24} color="black" /></TouchableOpacity>
             </View>
-            <ScrollView showsVerticalScrollIndicator={false} style={styles.mesajContainer}>
-                {/* <FlatList 
+            <SafeAreaView  style={styles.mesajContainer}>
+                <FlatList 
                 data={mesajlar.items}
                 renderItem={({item})=><MesajBox mesaj={item}/>}
-                /> */}
-                <BosMesaj />
-            </ScrollView>
+                showsVerticalScrollIndicator={false}
+                />
+                {/* <BosMesaj /> */}
+            </SafeAreaView>
             
            
         </SafeAreaView>

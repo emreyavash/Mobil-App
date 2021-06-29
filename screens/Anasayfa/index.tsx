@@ -47,7 +47,7 @@ const index = () => {
               
             </View>
             <View style={{margin:60}}>
-                <Text>Emre</Text>
+                <TouchableOpacity onPress={()=>navigation.navigate('Kategoriler')}><Text>Emre</Text></TouchableOpacity>
             </View>
             
         </SafeAreaProvider>

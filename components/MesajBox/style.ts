@@ -1,13 +1,11 @@
 import {StyleSheet} from 'react-native'
 const styles = StyleSheet.create({
     Container:{
-
         width:'100%',
-        height:90,
+        height:100,
         justifyContent:'center',
         alignItems:'center',
-        marginBottom:5,
-       
+        marginBottom:1,
     },
     mesajContainer:{
         width:'95%',

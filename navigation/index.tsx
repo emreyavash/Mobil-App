@@ -11,7 +11,6 @@ import { ColorSchemeName } from 'react-native';
 import NotFoundScreen from '../screens/NotFoundScreen';
 import { RootStackParamList } from '../types';
 import AnasayfaTabNavigator from './AnasayfaTabNavigator';
-import BottomTabNavigator from './BottomTabNavigator';
 import GirisyapNavigator from './GirisyapNavigator';
 import LinkingConfiguration from './LinkingConfiguration';
 
@@ -30,11 +29,8 @@ const Stack = createStackNavigator<RootStackParamList>();
 function RootNavigator() {
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }}>
-      <Stack.Screen name="GirisYapScreen" component={GirisyapNavigator} />
+      <Stack.Screen name='GirisYapScreen' component={GirisyapNavigator} />
       <Stack.Screen name="AnasayfaScreen" component={AnasayfaTabNavigator} />
-
-
-      
     </Stack.Navigator>
   );
 }
